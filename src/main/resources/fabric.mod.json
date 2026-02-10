@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "betterhitsounds",
+	"version": "${version}",
+	"name": "BetterHitSounds",
+	"description": "Custom hit sounds when attacking entities.",
+	"authors": [
+		"Pheonix"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Pheonix/BetterHitSounds"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/betterhitsounds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+      "client": [
+          "com.pheonix.betterhitsounds.BetterHitSoundsClient"
+      ],
+      "fabric-datagen": [
+          "com.pheonix.betterhitsounds.BetterHitSoundsDataGenerator"
+      ],
+      "main": [
+          "com.pheonix.betterhitsounds.BetterHitSounds"
+      ]
+    },
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*",
+		"modmenu": "*"
+	}
+}
