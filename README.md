@@ -1,53 +1,104 @@
-🎵 **BetterHitSounds**
+**BetterHitSounds v2.0.0**
 
-BetterHitSounds is a lightweight, client-side Fabric mod that adds satisfying hit sounds when attacking entities in Minecraft. Built especially for PvP players and combat-focused gameplay, it enhances immersion with smart audio feedback and combo-based sound scaling.
+BetterHitSounds is a client-side Fabric mod for Minecraft that upgrades hit feedback with custom sounds, cleaner presets, and a simple in-game setup screen.
 
-Now includes a built-in automatic update checker for a more professional and seamless experience.
+**Main Version**
 
-✨ Features:
+- Minecraft: `1.21.11`
+- Mod Version: `2.0.0`
+- Loader: `Fabric`
+- Environment: `Client-side only`
 
-• Player & Mob Hit Sounds – dynamic audio feedback when attacking  
-• Combo Hit System – chained hits subtly increase pitch  
-• Distance-Based Volume – sound fades naturally with distance  
-• Pitch Randomization – natural sound variation every hit  
-• Critical Hit Boost – enhanced sound feedback on crits  
-• Fully Configurable – adjust via JSON or Mod Menu  
-• Custom Sound Packs – supports resource pack overrides  
-• Automatic Version Checker – popup notification when a new version is available  
+**What The Mod Does**
 
-🆕 v1.1.0 Update:
+- Replaces default hit feedback with better custom hit sounds
+- Supports separate sounds for `Player` and `Mob` targets
+- Supports separate sound types for `Normal`, `Combo`, and `Crit`
+- Lets you choose between `OGG` playback mode and `Preset` playback mode
+- Includes built-in preset sound styles, including a `Minecraft Default` preset
+- Lets you preview sounds from the config screen
+- Reloads imported sounds without restarting the game
 
-• Fixed NoSuchFieldError crash on Minecraft 1.21.x  
-• Rebuilt in clean environment for stability  
-• Added professional update notification system  
-• Async background version checking  
-• Popup appears once per launch on Title Screen  
-• “Update”, “Later”, and “No Thanks” options  
-• Offline safe (no crashes without internet)  
+**Playback Modes**
 
-⚙ Installation:
+- `OGG`: uses your imported custom `.ogg` files
+- `Presets`: uses built-in packaged sound styles
 
-1. Install Fabric Loader  
-2. Install Fabric API  
-3. Drop the .jar into your mods folder  
-4. Launch Minecraft  
+**OGG Folder Setup**
 
-📂 Configuration:
+Place your custom sound files in these folders:
 
-The mod generates a config file at:
+- `config/betterhitsounds/sounds/player/hit`
+- `config/betterhitsounds/sounds/player/combo`
+- `config/betterhitsounds/sounds/player/crit`
+- `config/betterhitsounds/sounds/mob/hit`
+- `config/betterhitsounds/sounds/mob/combo`
+- `config/betterhitsounds/sounds/mob/crit`
 
-.minecraft/config/betterhitsounds.json
+Only one `.ogg` file is used per folder slot. Importing a new file replaces the old file for that slot.
 
-Adjust options like:
+**Quick Setup**
 
-• Enable / Disable hit sounds  
-• Combo behavior  
-• Max hearing distance  
-• Volume scaling  
-• Pitch variation  
-• Sound customization  
+1. Open the BetterHitSounds config screen.
+2. In `Options`, choose `Playback: OGG` or `Playback: Presets`.
+3. If you want custom sounds, go to `Customization`.
+4. Pick `Target: Player` or `Target: Mob`.
+5. Pick `Sound Type: Normal`, `Combo`, or `Crit`.
+6. Import one `.ogg` file for that slot.
+7. Use `Preview Current OGG` to test it.
+8. Hit an entity in-game to confirm everything works.
 
-🔗 Links:
+**Preset Setup**
 
-GitHub: https://github.com/Hardik-Verma/BetterHitSounds  
-Modrinth: https://modrinth.com/mod/betterhitsounds
+1. Open the BetterHitSounds config screen.
+2. Go to `Presets`.
+3. Choose the preset you want.
+4. Apply it.
+5. Use the preset preview buttons to test `Hit`, `Combo`, and `Crit`.
+
+**Config Features**
+
+- Mod enable toggle
+- Replace vanilla hit sound toggle
+- Separate player and mob sound toggles
+- Master volume
+- Player volume
+- Mob volume
+- Random pitch toggle
+- Minimum pitch
+- Maximum pitch
+- OGG or Preset playback selection
+
+**UI Pages**
+
+- `Options`
+- `Customization`
+- `Presets`
+- `Guide`
+
+**Version Copies**
+
+Dedicated project copies were prepared for:
+
+- `1.21.11 v2.0.0`
+- `1.21.8 v2.0.0`
+- `1.21.5 v2.0.0`
+- `1.21.4 v2.0.0`
+
+These version-specific copies exist to keep mixins, keybind APIs, and UI methods compatible with each Minecraft version.
+
+**Build**
+
+Use:
+
+`.\gradlew.bat build`
+
+The built jar will appear in:
+
+`build/libs`
+
+**GitHub**
+
+Source:
+`https://github.com/Pheonix/BetterHitSounds`
+
