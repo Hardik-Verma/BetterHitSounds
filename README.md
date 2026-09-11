@@ -79,7 +79,8 @@ Only one `.ogg` file is used per folder slot. Importing a new file replaces the 
 **Version Copies**
 
 Dedicated project copies were prepared for:
-
+- `26.2 v2.0.0`
+- `26.1 v2.0.0`
 - `1.21.11 v2.0.0`
 - `1.21.8 v2.0.0`
 - `1.21.5 v2.0.0`
@@ -98,7 +99,13 @@ The built jar will appear in:
 `build/libs`
 
 **GitHub**
-
 Source:
-`https://github.com/Pheonix/BetterHitSounds`
+`https://github.com/Hardik-Verma/BetterHitSounds`
 
+**Modrinth**
+Source:
+`https://modrinth.com/pheonix/betterhitsounds`
+
+**Curseforge**
+Source:
+`https://www.curseforge.com/minecraft/mc-mods/betterhitsounds/`
